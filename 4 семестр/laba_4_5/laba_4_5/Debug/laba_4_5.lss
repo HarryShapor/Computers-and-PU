@@ -1,0 +1,427 @@
+
+laba_4_5.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  0000035c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000002e8  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000011  00800100  00800100  0000035c  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000035c  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  0000038c  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000058  00000000  00000000  000003cc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000ac8  00000000  00000000  00000424  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000937  00000000  00000000  00000eec  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000382  00000000  00000000  00001823  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000000fc  00000000  00000000  00001ba8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000004b8  00000000  00000000  00001ca4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000143  00000000  00000000  0000215c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000048  00000000  00000000  0000229f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__ctors_end>
+   4:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+   8:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+   c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  10:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  14:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  18:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  1c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  20:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  24:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  28:	0c 94 7f 00 	jmp	0xfe	; 0xfe <__vector_10>
+  2c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  30:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  34:	0c 94 6e 00 	jmp	0xdc	; 0xdc <__vector_13>
+  38:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  3c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  40:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  44:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  48:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  4c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  50:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  54:	0c 94 0a 01 	jmp	0x214	; 0x214 <__vector_21>
+  58:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  5c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  60:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  64:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  68:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  6c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  70:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  74:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  78:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  7c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  80:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  84:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  88:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  8c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  90:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  94:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  98:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  9c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  a0:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  a4:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  a8:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  ac:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  b0:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+
+000000b4 <__ctors_end>:
+  b4:	11 24       	eor	r1, r1
+  b6:	1f be       	out	0x3f, r1	; 63
+  b8:	cf ef       	ldi	r28, 0xFF	; 255
+  ba:	d8 e0       	ldi	r29, 0x08	; 8
+  bc:	de bf       	out	0x3e, r29	; 62
+  be:	cd bf       	out	0x3d, r28	; 61
+
+000000c0 <__do_clear_bss>:
+  c0:	21 e0       	ldi	r18, 0x01	; 1
+  c2:	a0 e0       	ldi	r26, 0x00	; 0
+  c4:	b1 e0       	ldi	r27, 0x01	; 1
+  c6:	01 c0       	rjmp	.+2      	; 0xca <.do_clear_bss_start>
+
+000000c8 <.do_clear_bss_loop>:
+  c8:	1d 92       	st	X+, r1
+
+000000ca <.do_clear_bss_start>:
+  ca:	a1 31       	cpi	r26, 0x11	; 17
+  cc:	b2 07       	cpc	r27, r18
+  ce:	e1 f7       	brne	.-8      	; 0xc8 <.do_clear_bss_loop>
+  d0:	0e 94 46 01 	call	0x28c	; 0x28c <main>
+  d4:	0c 94 72 01 	jmp	0x2e4	; 0x2e4 <_exit>
+
+000000d8 <__bad_interrupt>:
+  d8:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000dc <__vector_13>:
+#include <avr/interrupt.h>
+unsigned char OVF_counter, zamer_1, zamer_T;
+unsigned long T, f;
+unsigned int rising_1, rising_2, falling;
+ISR(TIMER1_OVF_vect)
+{
+  dc:	1f 92       	push	r1
+  de:	0f 92       	push	r0
+  e0:	0f b6       	in	r0, 0x3f	; 63
+  e2:	0f 92       	push	r0
+  e4:	11 24       	eor	r1, r1
+  e6:	8f 93       	push	r24
+	OVF_counter++; // Увеличиваем счетчик переполнений
+  e8:	80 91 06 01 	lds	r24, 0x0106	; 0x800106 <OVF_counter>
+  ec:	8f 5f       	subi	r24, 0xFF	; 255
+  ee:	80 93 06 01 	sts	0x0106, r24	; 0x800106 <OVF_counter>
+}
+  f2:	8f 91       	pop	r24
+  f4:	0f 90       	pop	r0
+  f6:	0f be       	out	0x3f, r0	; 63
+  f8:	0f 90       	pop	r0
+  fa:	1f 90       	pop	r1
+  fc:	18 95       	reti
+
+000000fe <__vector_10>:
+ISR(TIMER1_CAPT_vect) //прерывание таймера 1 по захвату
+{
+  fe:	1f 92       	push	r1
+ 100:	0f 92       	push	r0
+ 102:	0f b6       	in	r0, 0x3f	; 63
+ 104:	0f 92       	push	r0
+ 106:	11 24       	eor	r1, r1
+ 108:	2f 93       	push	r18
+ 10a:	3f 93       	push	r19
+ 10c:	4f 93       	push	r20
+ 10e:	5f 93       	push	r21
+ 110:	6f 93       	push	r22
+ 112:	7f 93       	push	r23
+ 114:	8f 93       	push	r24
+ 116:	9f 93       	push	r25
+ 118:	af 93       	push	r26
+ 11a:	bf 93       	push	r27
+ 11c:	ef 93       	push	r30
+ 11e:	ff 93       	push	r31
+	switch(zamer_1)
+ 120:	80 91 0e 01 	lds	r24, 0x010E	; 0x80010e <zamer_1>
+ 124:	88 23       	and	r24, r24
+ 126:	21 f0       	breq	.+8      	; 0x130 <__vector_10+0x32>
+ 128:	81 30       	cpi	r24, 0x01	; 1
+ 12a:	09 f4       	brne	.+2      	; 0x12e <__vector_10+0x30>
+ 12c:	40 c0       	rjmp	.+128    	; 0x1ae <__vector_10+0xb0>
+ 12e:	61 c0       	rjmp	.+194    	; 0x1f2 <__vector_10+0xf4>
+	{
+		case 0: // Вычисляем период импульса
+		switch(zamer_T)
+ 130:	80 91 0d 01 	lds	r24, 0x010D	; 0x80010d <zamer_T>
+ 134:	88 23       	and	r24, r24
+ 136:	19 f0       	breq	.+6      	; 0x13e <__vector_10+0x40>
+ 138:	81 30       	cpi	r24, 0x01	; 1
+ 13a:	79 f0       	breq	.+30     	; 0x15a <__vector_10+0x5c>
+ 13c:	5a c0       	rjmp	.+180    	; 0x1f2 <__vector_10+0xf4>
+		{
+			case 0:
+			rising_1 = ICR1; // Запоминаем значение счётчика
+ 13e:	80 91 86 00 	lds	r24, 0x0086	; 0x800086 <__TEXT_REGION_LENGTH__+0x7e0086>
+ 142:	90 91 87 00 	lds	r25, 0x0087	; 0x800087 <__TEXT_REGION_LENGTH__+0x7e0087>
+ 146:	90 93 0c 01 	sts	0x010C, r25	; 0x80010c <rising_1+0x1>
+ 14a:	80 93 0b 01 	sts	0x010B, r24	; 0x80010b <rising_1>
+			OVF_counter = 0; // Обнуляем количество переполнений счётчика
+ 14e:	10 92 06 01 	sts	0x0106, r1	; 0x800106 <OVF_counter>
+			zamer_T = 1; // Переходим к следующему вычислению
+ 152:	81 e0       	ldi	r24, 0x01	; 1
+ 154:	80 93 0d 01 	sts	0x010D, r24	; 0x80010d <zamer_T>
+			break;
+ 158:	4c c0       	rjmp	.+152    	; 0x1f2 <__vector_10+0xf4>
+			
+			case 1:
+			rising_2 = ICR1; // Запоминаем значение счётчика
+ 15a:	20 91 86 00 	lds	r18, 0x0086	; 0x800086 <__TEXT_REGION_LENGTH__+0x7e0086>
+ 15e:	30 91 87 00 	lds	r19, 0x0087	; 0x800087 <__TEXT_REGION_LENGTH__+0x7e0087>
+ 162:	30 93 10 01 	sts	0x0110, r19	; 0x800110 <rising_2+0x1>
+ 166:	20 93 0f 01 	sts	0x010F, r18	; 0x80010f <rising_2>
+			// Приводим все переменные к одному типу и вычисляем период импульса
+			T = (unsigned long)rising_2 - (unsigned long)rising_1 + ((unsigned long)OVF_counter * 65536);
+ 16a:	80 91 06 01 	lds	r24, 0x0106	; 0x800106 <OVF_counter>
+ 16e:	90 e0       	ldi	r25, 0x00	; 0
+ 170:	a0 e0       	ldi	r26, 0x00	; 0
+ 172:	b0 e0       	ldi	r27, 0x00	; 0
+ 174:	dc 01       	movw	r26, r24
+ 176:	99 27       	eor	r25, r25
+ 178:	88 27       	eor	r24, r24
+ 17a:	40 91 0b 01 	lds	r20, 0x010B	; 0x80010b <rising_1>
+ 17e:	50 91 0c 01 	lds	r21, 0x010C	; 0x80010c <rising_1+0x1>
+ 182:	84 1b       	sub	r24, r20
+ 184:	95 0b       	sbc	r25, r21
+ 186:	a1 09       	sbc	r26, r1
+ 188:	b1 09       	sbc	r27, r1
+ 18a:	82 0f       	add	r24, r18
+ 18c:	93 1f       	adc	r25, r19
+ 18e:	a1 1d       	adc	r26, r1
+ 190:	b1 1d       	adc	r27, r1
+ 192:	80 93 07 01 	sts	0x0107, r24	; 0x800107 <T>
+ 196:	90 93 08 01 	sts	0x0108, r25	; 0x800108 <T+0x1>
+ 19a:	a0 93 09 01 	sts	0x0109, r26	; 0x800109 <T+0x2>
+ 19e:	b0 93 0a 01 	sts	0x010A, r27	; 0x80010a <T+0x3>
+			zamer_T = 0;
+ 1a2:	10 92 0d 01 	sts	0x010D, r1	; 0x80010d <zamer_T>
+			zamer_1 = 1; // Переходим к следующему вычислению
+ 1a6:	81 e0       	ldi	r24, 0x01	; 1
+ 1a8:	80 93 0e 01 	sts	0x010E, r24	; 0x80010e <zamer_1>
+			break;
+ 1ac:	22 c0       	rjmp	.+68     	; 0x1f2 <__vector_10+0xf4>
+		}
+		break;
+		case 1:
+		f = (16000000)/T; // Вычисляем частоту сигнала в Гц
+ 1ae:	20 91 07 01 	lds	r18, 0x0107	; 0x800107 <T>
+ 1b2:	30 91 08 01 	lds	r19, 0x0108	; 0x800108 <T+0x1>
+ 1b6:	40 91 09 01 	lds	r20, 0x0109	; 0x800109 <T+0x2>
+ 1ba:	50 91 0a 01 	lds	r21, 0x010A	; 0x80010a <T+0x3>
+ 1be:	60 e0       	ldi	r22, 0x00	; 0
+ 1c0:	74 e2       	ldi	r23, 0x24	; 36
+ 1c2:	84 ef       	ldi	r24, 0xF4	; 244
+ 1c4:	90 e0       	ldi	r25, 0x00	; 0
+ 1c6:	0e 94 50 01 	call	0x2a0	; 0x2a0 <__udivmodsi4>
+ 1ca:	20 93 00 01 	sts	0x0100, r18	; 0x800100 <_edata>
+ 1ce:	30 93 01 01 	sts	0x0101, r19	; 0x800101 <_edata+0x1>
+ 1d2:	40 93 02 01 	sts	0x0102, r20	; 0x800102 <_edata+0x2>
+ 1d6:	50 93 03 01 	sts	0x0103, r21	; 0x800103 <_edata+0x3>
+		zamer_1 = 0; // Переходим к следующему вычислению
+ 1da:	10 92 0e 01 	sts	0x010E, r1	; 0x80010e <zamer_1>
+		if (UDRE0 != 0)
+		{
+			UDR0 = f/1000;
+ 1de:	ca 01       	movw	r24, r20
+ 1e0:	b9 01       	movw	r22, r18
+ 1e2:	28 ee       	ldi	r18, 0xE8	; 232
+ 1e4:	33 e0       	ldi	r19, 0x03	; 3
+ 1e6:	40 e0       	ldi	r20, 0x00	; 0
+ 1e8:	50 e0       	ldi	r21, 0x00	; 0
+ 1ea:	0e 94 50 01 	call	0x2a0	; 0x2a0 <__udivmodsi4>
+ 1ee:	20 93 c6 00 	sts	0x00C6, r18	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7e00c6>
+		}
+		break;
+	}
+};
+ 1f2:	ff 91       	pop	r31
+ 1f4:	ef 91       	pop	r30
+ 1f6:	bf 91       	pop	r27
+ 1f8:	af 91       	pop	r26
+ 1fa:	9f 91       	pop	r25
+ 1fc:	8f 91       	pop	r24
+ 1fe:	7f 91       	pop	r23
+ 200:	6f 91       	pop	r22
+ 202:	5f 91       	pop	r21
+ 204:	4f 91       	pop	r20
+ 206:	3f 91       	pop	r19
+ 208:	2f 91       	pop	r18
+ 20a:	0f 90       	pop	r0
+ 20c:	0f be       	out	0x3f, r0	; 63
+ 20e:	0f 90       	pop	r0
+ 210:	1f 90       	pop	r1
+ 212:	18 95       	reti
+
+00000214 <__vector_21>:
+
+ISR(ADC_vect){
+ 214:	1f 92       	push	r1
+ 216:	0f 92       	push	r0
+ 218:	0f b6       	in	r0, 0x3f	; 63
+ 21a:	0f 92       	push	r0
+ 21c:	11 24       	eor	r1, r1
+ 21e:	8f 93       	push	r24
+	OCR0A = ADCH;
+ 220:	80 91 79 00 	lds	r24, 0x0079	; 0x800079 <__TEXT_REGION_LENGTH__+0x7e0079>
+ 224:	87 bd       	out	0x27, r24	; 39
+}
+ 226:	8f 91       	pop	r24
+ 228:	0f 90       	pop	r0
+ 22a:	0f be       	out	0x3f, r0	; 63
+ 22c:	0f 90       	pop	r0
+ 22e:	1f 90       	pop	r1
+ 230:	18 95       	reti
+
+00000232 <timer0>:
+void timer0()
+{
+	DDRD = 0x40;
+ 232:	80 e4       	ldi	r24, 0x40	; 64
+ 234:	8a b9       	out	0x0a, r24	; 10
+	TCCR0A |= (0 << COM0A1) | (1 << COM0A0) | (0 << COM0B1) | (0 << COM0B0) | (1 << WGM00) | (1 << WGM01);
+ 236:	84 b5       	in	r24, 0x24	; 36
+ 238:	83 64       	ori	r24, 0x43	; 67
+ 23a:	84 bd       	out	0x24, r24	; 36
+	TCCR0B |= (1 << WGM02) | (0 << CS02) | (1 << CS01) | (1 << CS00);
+ 23c:	85 b5       	in	r24, 0x25	; 37
+ 23e:	8b 60       	ori	r24, 0x0B	; 11
+ 240:	85 bd       	out	0x25, r24	; 37
+	OCR0A = 0;
+ 242:	17 bc       	out	0x27, r1	; 39
+ 244:	08 95       	ret
+
+00000246 <uartic>:
+}
+void uartic()			//функция инициализации UART
+{
+	UBRR0 = 103;		//главная процедура, точка входа в программу
+ 246:	87 e6       	ldi	r24, 0x67	; 103
+ 248:	90 e0       	ldi	r25, 0x00	; 0
+ 24a:	90 93 c5 00 	sts	0x00C5, r25	; 0x8000c5 <__TEXT_REGION_LENGTH__+0x7e00c5>
+ 24e:	80 93 c4 00 	sts	0x00C4, r24	; 0x8000c4 <__TEXT_REGION_LENGTH__+0x7e00c4>
+	UCSR0C |= (1 << UCSZ01) | (1 << UCSZ00);//размер пакета 8бит
+ 252:	e2 ec       	ldi	r30, 0xC2	; 194
+ 254:	f0 e0       	ldi	r31, 0x00	; 0
+ 256:	80 81       	ld	r24, Z
+ 258:	86 60       	ori	r24, 0x06	; 6
+ 25a:	80 83       	st	Z, r24
+	UCSR0B |= (1 << TXEN0);	//разрешение передачи данных
+ 25c:	e1 ec       	ldi	r30, 0xC1	; 193
+ 25e:	f0 e0       	ldi	r31, 0x00	; 0
+ 260:	80 81       	ld	r24, Z
+ 262:	88 60       	ori	r24, 0x08	; 8
+ 264:	80 83       	st	Z, r24
+ 266:	08 95       	ret
+
+00000268 <adc>:
+}
+void adc(){			//функция инициализации АЦП
+	ADMUX = (0<<REFS1)|(1<<REFS0)|(1<<ADLAR)|(0<<MUX3)|(0<<MUX2)|(0<<MUX1)|(0<<MUX0);
+ 268:	80 e6       	ldi	r24, 0x60	; 96
+ 26a:	80 93 7c 00 	sts	0x007C, r24	; 0x80007c <__TEXT_REGION_LENGTH__+0x7e007c>
+	//вкл. ацп, реж. непрерывн. преобр., разр. прерывания, частота преобр. = FCPU/128
+	ADCSRA = (1<<ADEN)|(1<<ADSC)|(1<<ADATE)|(1<<ADIE)|(1<<ADPS2)|(1<<ADPS1)|(1<<ADPS0);
+ 26e:	8f ee       	ldi	r24, 0xEF	; 239
+ 270:	80 93 7a 00 	sts	0x007A, r24	; 0x80007a <__TEXT_REGION_LENGTH__+0x7e007a>
+ 274:	08 95       	ret
+
+00000276 <timer1>:
+}
+
+void timer1(){		//функция для инициализации таймера 1
+	TCCR1B |= (1 << ICES1) | (0 << CS12) | (0 << CS11) | (1 << CS10);
+ 276:	e1 e8       	ldi	r30, 0x81	; 129
+ 278:	f0 e0       	ldi	r31, 0x00	; 0
+ 27a:	80 81       	ld	r24, Z
+ 27c:	81 64       	ori	r24, 0x41	; 65
+ 27e:	80 83       	st	Z, r24
+	//включение регистра захвата по фронту и Fclk/1
+	TIMSK1 |= (1 << TOIE1) |(1 << ICIE1);	//разрешение прерывания захвата и прерывания по переполнению
+ 280:	ef e6       	ldi	r30, 0x6F	; 111
+ 282:	f0 e0       	ldi	r31, 0x00	; 0
+ 284:	80 81       	ld	r24, Z
+ 286:	81 62       	ori	r24, 0x21	; 33
+ 288:	80 83       	st	Z, r24
+ 28a:	08 95       	ret
+
+0000028c <main>:
+
+}
+int main(void)	//главная процедура, точка входа в программу
+{
+	timer0();	//вызов функции инициализации таймера 0
+ 28c:	0e 94 19 01 	call	0x232	; 0x232 <timer0>
+	uartic();	//вызов функции инициализации UART
+ 290:	0e 94 23 01 	call	0x246	; 0x246 <uartic>
+	adc();		//вызов функции инициализации АЦП
+ 294:	0e 94 34 01 	call	0x268	; 0x268 <adc>
+	timer1();	//вызов функции инициализации таймера 1
+ 298:	0e 94 3b 01 	call	0x276	; 0x276 <timer1>
+	sei();		//разрешение глобальных прерываний
+ 29c:	78 94       	sei
+ 29e:	ff cf       	rjmp	.-2      	; 0x29e <main+0x12>
+
+000002a0 <__udivmodsi4>:
+ 2a0:	a1 e2       	ldi	r26, 0x21	; 33
+ 2a2:	1a 2e       	mov	r1, r26
+ 2a4:	aa 1b       	sub	r26, r26
+ 2a6:	bb 1b       	sub	r27, r27
+ 2a8:	fd 01       	movw	r30, r26
+ 2aa:	0d c0       	rjmp	.+26     	; 0x2c6 <__udivmodsi4_ep>
+
+000002ac <__udivmodsi4_loop>:
+ 2ac:	aa 1f       	adc	r26, r26
+ 2ae:	bb 1f       	adc	r27, r27
+ 2b0:	ee 1f       	adc	r30, r30
+ 2b2:	ff 1f       	adc	r31, r31
+ 2b4:	a2 17       	cp	r26, r18
+ 2b6:	b3 07       	cpc	r27, r19
+ 2b8:	e4 07       	cpc	r30, r20
+ 2ba:	f5 07       	cpc	r31, r21
+ 2bc:	20 f0       	brcs	.+8      	; 0x2c6 <__udivmodsi4_ep>
+ 2be:	a2 1b       	sub	r26, r18
+ 2c0:	b3 0b       	sbc	r27, r19
+ 2c2:	e4 0b       	sbc	r30, r20
+ 2c4:	f5 0b       	sbc	r31, r21
+
+000002c6 <__udivmodsi4_ep>:
+ 2c6:	66 1f       	adc	r22, r22
+ 2c8:	77 1f       	adc	r23, r23
+ 2ca:	88 1f       	adc	r24, r24
+ 2cc:	99 1f       	adc	r25, r25
+ 2ce:	1a 94       	dec	r1
+ 2d0:	69 f7       	brne	.-38     	; 0x2ac <__udivmodsi4_loop>
+ 2d2:	60 95       	com	r22
+ 2d4:	70 95       	com	r23
+ 2d6:	80 95       	com	r24
+ 2d8:	90 95       	com	r25
+ 2da:	9b 01       	movw	r18, r22
+ 2dc:	ac 01       	movw	r20, r24
+ 2de:	bd 01       	movw	r22, r26
+ 2e0:	cf 01       	movw	r24, r30
+ 2e2:	08 95       	ret
+
+000002e4 <_exit>:
+ 2e4:	f8 94       	cli
+
+000002e6 <__stop_program>:
+ 2e6:	ff cf       	rjmp	.-2      	; 0x2e6 <__stop_program>
